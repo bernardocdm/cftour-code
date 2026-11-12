@@ -1,0 +1,34 @@
+/* Dialogs: detalhe de destino e planejador */
+.dialog { border:0; border-radius:16px; width:min(570px,calc(100% - 32px)); max-height:90svh; padding:0; color:#142c3e; box-shadow:0 30px 100px #031b3266; margin:auto; overflow-y:auto }
+.dialog::backdrop { background:#051b34ad; backdrop-filter:blur(5px) }
+.dialog-close { position:absolute; right:15px; top:15px; z-index:2; width:38px; height:38px; background:#fffffff2; border-radius:50%; display:grid; place-items:center; color:#142c3e }
+.detail-image { height:260px }
+.dialog-content { padding:35px }
+.dialog h2 { font-size:36px; letter-spacing:-1.5px; margin-bottom:20px }
+.dialog-content>p:not(.eyebrow):not(.step-label) { font-size:13px; color:#687581 }
+.tags { display:flex; gap:8px; flex-wrap:wrap; margin:22px 0 }
+.tags span { font-size:10px; background:#edf3fc; color:#0754d9; border-radius:20px; padding:7px 12px }
+.dialog-content .detail-note { font-size:11px!important; margin-bottom:25px }
+.planner-content { padding:42px 35px 28px }
+.planner-content>.eyebrow { padding-right:25px }
+.progress { display:flex; gap:6px; margin:28px 0 18px }
+.progress span { height:3px; border-radius:5px; background:#e3e9f1; flex:1 }
+.progress .filled { background:#0754d9 }
+.step-label { font-size:10px; color:#0754d9; letter-spacing:2px; margin-bottom:12px }
+.choices { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:25px }
+.choices button { display:flex; justify-content:space-between; align-items:center; gap:12px; background:#f5f7fa; border:1px solid #e1e7ed; padding:16px 12px; border-radius:6px; text-align:left; font-size:11px; color:#142c3e }
+.choices button.chosen { border-color:#0754d9; color:#0754d9; background:#edf3ff }
+.planner-navigation { display:flex; justify-content:space-between; align-items:center; margin-top:28px }
+.planner-navigation>button:not(.button) { background:transparent; display:flex; align-items:center; gap:4px; font-size:12px; color:#687581 }
+.input-label { font-size:12px; display:block; margin:25px 0 10px }
+input { width:100%; padding:16px; border:1px solid #c8d3df; border-radius:6px; font:inherit; font-size:13px; color:#142c3e }
+.suggestions { display:flex; gap:8px; flex-wrap:wrap; margin-top:14px }
+.suggestions button { background:#edf3ff; color:#0754d9; padding:8px 11px; font-size:10px; border-radius:20px }
+.summary { margin:25px 0; background:#f5f7fa; padding:10px 20px; border-radius:8px }
+.summary>div { padding:12px 0; border-bottom:1px solid #dde5ed }
+.summary>div:last-child { border:0 }
+.summary dt { font-size:10px; color:#687581; margin-bottom:5px }
+.summary dd { margin:0; font-size:14px; overflow-wrap:anywhere }
+.full { width:100% }
+.copy-button { display:flex; align-items:center; justify-content:center; gap:10px; width:100%; padding:18px; background:transparent; color:#0754d9; font-size:12px }
+.privacy-note { font-size:10px!important; line-height:1.6; text-align:center }

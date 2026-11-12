@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@import "./base.css";
+@import "./layout.css";
+@import "./sections.css";
+@import "./dialogs.css";
+@import "./responsive.css";
+
+@theme { --color-brand: #0754d9; --font-sans: 'Inter', 'Segoe UI', sans-serif; }

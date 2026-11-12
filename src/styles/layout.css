@@ -1,0 +1,20 @@
+/* Layout: header, navegação mobile, footer */
+.header { height:96px; position:fixed; top:0; left:0; width:100%; z-index:20; display:flex; align-items:center; justify-content:space-between; padding:0 6vw; color:white; transition:background .25s,color .25s,height .25s }
+.header.solid { background:#fffffff5; color:#142c3e; height:78px; border-bottom:1px solid #e6eaf0; backdrop-filter:blur(12px) }
+.brand { font-weight:950; font-style:italic; font-size:37px; letter-spacing:-4px; line-height:.8; display:flex; flex-direction:column; width:80px }
+.brand span { font-weight:700; font-style:normal; letter-spacing:3px; font-size:10px; display:flex; align-items:center; gap:1px; margin-top:8px }
+.desktop-nav { display:flex; gap:35px; font-size:12px }
+.desktop-nav a { position:relative; padding:10px 0 }
+.desktop-nav a:after { content:''; position:absolute; height:1px; bottom:4px; left:0; width:0; background:currentColor; transition:width .25s }
+.desktop-nav a:hover:after { width:100% }
+.header-cta { display:flex; align-items:center; gap:25px; background:#ffffff18; border:1px solid #ffffff80; padding:13px 18px; border-radius:4px; font-size:12px }
+.solid .header-cta { background:#0754d9; color:white; border-color:#0754d9 }
+.menu-toggle { display:none; background:transparent; color:inherit }
+.mobile-nav { position:fixed; top:78px; background:white; z-index:19; width:100%; padding:20px 24px; box-shadow:0 15px 20px #142c3e15 }
+.mobile-nav a { display:flex; justify-content:space-between; padding:18px 0; border-bottom:1px solid #ddd }
+footer { background:#102b40; color:#fff; padding:55px 6vw 0 }
+.footer-top { display:flex; justify-content:space-between; gap:40px; align-items:start; padding-bottom:45px }
+.footer-top p { font-size:13px; color:#c0ced8 }
+.footer-top>div { display:grid; gap:17px }
+.footer-top>div a { display:flex; align-items:center; gap:12px; font-size:12px }
+.footer-bottom { border-top:1px solid #ffffff25; padding:23px 0; display:flex; justify-content:space-between; gap:20px; font-size:9px; color:#b1c0cb }
